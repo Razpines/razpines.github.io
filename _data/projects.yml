@@ -2,31 +2,18 @@
   status: Shipped
   description: End-to-end pipeline that turns Reddit stories into ready-to-post vertical videos (rewrite -> TTS -> timed captions -> render -> optional publish).
   repo: https://github.com/Razpines/reels_factory
+  post: /blog/reels-factory/
   highlights:
     - Modular stages with reruns via cached artifacts
     - Word-level captions and mobile readability tweaks
     - FFmpeg-based 9:16 rendering pipeline
     - Optional Instagram Graph API publishing
 
-- name: Buy Again Recommendations (Amazon)
-  status: In production
-  description: Built and deployed personalization models for large-scale Buy Again recommendations, with careful offline evaluation and online experimentation.
-  highlights:
-    - End-to-end modeling, evaluation, and productionization
-    - Temporal modeling on multi-year behavioral logs
-    - Calibration and risk-aware decisioning
+- name: Paper: Compound matrices and Hausdorff dimension
+  status: Publication
+  description: A paper on generalizing multiplicative/additive compounds and contraction theory to the Hausdorff dimension.
+  url: https://arxiv.org/abs/2012.13441
 
-- name: Crypto Algo Trading Research (Solidus)
-  status: Shipped
-  description: Led research and engineering of production trading strategies and latency-sensitive components for crypto markets.
-  highlights:
-    - Portfolio optimization and live correlation modeling
-    - Real-time guardrails and fast regression detection
-    - Time-series modeling for irregular multivariate data
-
-- name: Embedded Systems (Cellolo)
-  status: Shipped
-  description: Built embedded software and rapid prototypes for 8052-based IoT devices.
-  highlights:
-    - C / Assembly on constrained hardware
-    - Performance and reliability under tight resource limits
+- name: More soon
+  status: In progress
+  description: I'm adding more open-source projects and write-ups over time.

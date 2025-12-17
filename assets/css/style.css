@@ -24,6 +24,18 @@ body {
   margin: 0;
   font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial,
     "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  position: relative;
+  z-index: 0;
+  background: transparent;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
   background: radial-gradient(
       1200px 800px at 20% -10%,
       rgba(138, 180, 255, 0.25),
@@ -35,7 +47,10 @@ body {
       transparent 50%
     ),
     var(--bg);
-  color: var(--text);
+}
+
+html {
+  background: var(--bg);
 }
 
 a {

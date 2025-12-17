@@ -6,8 +6,8 @@ description: Portfolio, projects, and notes.
 <section class="hero">
   <h1>Hi, I'm Raz Pines.</h1>
   <p>
-    I'm an Applied Scientist focused on ML personalization and time-series modeling.
-    I like shipping end-to-end systems: messy data &rarr; models &rarr; production.
+    This site is for open-source projects, fun sidequests, and a personal blog where I
+    write up what I build and learn along the way.
   </p>
   <div class="cta-row">
     <a class="button primary" href="{{ '/projects/' | relative_url }}">View projects</a>
@@ -23,7 +23,10 @@ description: Portfolio, projects, and notes.
     {% assign p = site.data.projects[0] %}
     <h3>{{ p.name }}</h3>
     <p class="muted">{{ p.description }}</p>
-    <p><a href="{{ p.repo }}">Repo &rarr;</a></p>
+    <p>
+      {% if p.repo %}<a href="{{ p.repo }}">Repo &rarr;</a>{% endif %}
+      {% if p.post %}<span class="muted">&nbsp;&middot;&nbsp;</span><a href="{{ p.post | relative_url }}">Write-up &rarr;</a>{% endif %}
+    </p>
     {% if p.highlights %}
       <ul class="list">
         {% for h in p.highlights limit: 3 %}
@@ -46,14 +49,5 @@ description: Portfolio, projects, and notes.
     {% else %}
       <p class="muted">No posts yet.</p>
     {% endif %}
-  </div>
-
-  <div class="card">
-    <h2>What I'm optimizing for</h2>
-    <ul class="list">
-      <li>Personalization and ranking at scale</li>
-      <li>Strong evaluation: offline metrics + online experiments</li>
-      <li>Production ML: pipelines, deployment, and monitoring</li>
-    </ul>
   </div>
 </section>

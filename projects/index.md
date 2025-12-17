@@ -3,14 +3,18 @@ title: Projects
 permalink: /projects/
 ---
 
-Open-source projects and selected shipped work.
+Open-source projects, fun sidequests, and write-ups.
 
 <div class="grid">
   {% for p in site.data.projects %}
     <div class="card">
       <h2>{{ p.name }}</h2>
       <p class="muted">{{ p.description }}</p>
-      {% if p.repo %}<p><a href="{{ p.repo }}">Repo &rarr;</a></p>{% endif %}
+      <p>
+        {% if p.repo %}<a href="{{ p.repo }}">Repo &rarr;</a>{% endif %}
+        {% if p.post %}{% if p.repo %}<span class="muted">&nbsp;&middot;&nbsp;</span>{% endif %}<a href="{{ p.post | relative_url }}">Write-up &rarr;</a>{% endif %}
+        {% if p.url %}{% if p.repo or p.post %}<span class="muted">&nbsp;&middot;&nbsp;</span>{% endif %}<a href="{{ p.url }}">Link &rarr;</a>{% endif %}
+      </p>
       {% if p.highlights %}
         <ul class="list">
           {% for h in p.highlights %}
