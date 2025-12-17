@@ -13,7 +13,8 @@ Open-source projects, fun sidequests, and write-ups.
       <p>
         {% if p.repo %}<a href="{{ p.repo }}">Repo &rarr;</a>{% endif %}
         {% if p.post %}{% if p.repo %}<span class="muted">&nbsp;&middot;&nbsp;</span>{% endif %}<a href="{{ p.post | relative_url }}">Write-up &rarr;</a>{% endif %}
-        {% if p.url %}{% if p.repo or p.post %}<span class="muted">&nbsp;&middot;&nbsp;</span>{% endif %}<a href="{{ p.url }}">Link &rarr;</a>{% endif %}
+        {% if p.url %}{% if p.repo or p.post %}<span class="muted">&nbsp;&middot;&nbsp;</span>{% endif %}<a href="{{ p.url }}">arXiv &rarr;</a>{% endif %}
+        {% if p.url2 %}{% if p.repo or p.post or p.url %}<span class="muted">&nbsp;&middot;&nbsp;</span>{% endif %}<a href="{{ p.url2 }}">IEEE Xplore &rarr;</a>{% endif %}
       </p>
       {% if p.highlights %}
         <ul class="list">
