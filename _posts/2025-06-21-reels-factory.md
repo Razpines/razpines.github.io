@@ -2,6 +2,7 @@
 layout: post
 title: "I Built a Fully Automated Reels Factory (Reddit -> Rewrite -> Voice -> Captions -> 9:16 Video -> Publish)"
 description: "A practical, end-to-end experiment in automating short-form storytelling videos - and the real-world friction points you hit when you try to auto-publish."
+date: 2025-06-21
 tags: [automation, video, ffmpeg, llm, captions, instagram]
 ---
 
@@ -10,8 +11,6 @@ You've seen them: first-person story over Minecraft gameplay, calm voiceover, pe
 So I automated it.
 
 This is about building a pipeline that eats Reddit posts and spits out ready-to-post vertical videos. Also: why the "last mile" of actually publishing them automatically is harder than generating the videos themselves.
-
-**Repo:** https://github.com/Razpines/reels_factory
 
 ---
 
@@ -184,30 +183,26 @@ The repo can:
 - Output ready-to-post MP4s
 - Document the publishing extension (and its headaches)
 
-**Repo:** https://github.com/Razpines/reels_factory
-
----
-
 ## What I learned
 
 **Automation means handling ugly inputs**  
 The hard part isn't generating a video. It's handling edge cases without manual intervention.
 
-**Captions aren't a feature—they're the product**  
+**Captions aren't a feature - they're the product**  
 Great voiceover + bad captions = dead retention.
 
 **Modular pipelines beat monoliths**  
 When something breaks, rerun one stage, inspect the artifact, keep moving.
 
 **Publishing is a separate engineering problem**  
-Platform APIs, permissions, compliance—it's not "the last step." It's its own system.
+Platform APIs, permissions, compliance: it's not "the last step." It's its own system.
 
 ---
 
 ## Next steps
 
 - **No-API demo mode** (ship with example story + background clip)
-- **Content ranking** (not just filtering—predict what'll perform)
+- **Content ranking** (not just filtering: predict what'll perform)
 - **More caption styles** (themes, per-word highlights, dynamic pacing)
 - **Robust publishing service** (token refresh, scheduling, retries)
 
@@ -217,7 +212,7 @@ Platform APIs, permissions, compliance—it's not "the last step." It's its own 
 
 Start by generating one reel end-to-end, then scale to batch mode.
 
-**Repo:** https://github.com/Razpines/reels_factory
+**Repo:** [reels_factory](https://github.com/Razpines/reels_factory)
 
 ---
 

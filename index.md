@@ -4,7 +4,7 @@ description: Portfolio, projects, and notes.
 ---
 
 <section class="hero">
-  <h1>Hi, I'm Raz Pines.</h1>
+  <h1>Hi, I'm Raz.</h1>
   <p>
     This site is for open-source projects, fun sidequests, and a personal blog where I
     write up what I build and learn along the way.
