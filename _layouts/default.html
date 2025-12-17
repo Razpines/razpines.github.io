@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>
-      {% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}
+      {% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.title }}
     </title>
     {% if page.description or site.description %}
       <meta
@@ -41,7 +41,7 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <span>© {{ site.time | date: '%Y' }} {{ site.title }}</span>
+        <span>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</span>
         <span class="footer-links">
           <a href="https://github.com/{{ site.github_username | default: 'Razpines' }}">GitHub</a>
           {% if site.linkedin_url %}<a href="{{ site.linkedin_url }}">LinkedIn</a>{% endif %}

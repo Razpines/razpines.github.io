@@ -84,8 +84,21 @@ pre {
   top: 0;
   z-index: 10;
   border-bottom: 1px solid var(--border);
-  background: rgba(11, 15, 25, 0.8);
+  background: transparent;
+}
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 15, 25, 0.85);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  pointer-events: none;
+}
+
+.site-header > * {
+  position: relative;
 }
 
 .header-inner {

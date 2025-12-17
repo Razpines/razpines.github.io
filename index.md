@@ -7,7 +7,7 @@ description: Portfolio, projects, and notes.
   <h1>Hi, I'm Raz Pines.</h1>
   <p>
     I'm an Applied Scientist focused on ML personalization and time-series modeling.
-    I like shipping end-to-end systems: messy data → models → production.
+    I like shipping end-to-end systems: messy data &rarr; models &rarr; production.
   </p>
   <div class="cta-row">
     <a class="button primary" href="{{ '/projects/' | relative_url }}">View projects</a>

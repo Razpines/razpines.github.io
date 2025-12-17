@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "I Built a Fully Automated Reels Factory (Reddit → Rewrite → Voice → Captions → 9:16 Video → Publish)"
-description: "A practical, end-to-end experiment in automating short-form storytelling videos — and the real-world friction points you hit when you try to auto-publish."
+title: "I Built a Fully Automated Reels Factory (Reddit -> Rewrite -> Voice -> Captions -> 9:16 Video -> Publish)"
+description: "A practical, end-to-end experiment in automating short-form storytelling videos - and the real-world friction points you hit when you try to auto-publish."
 tags: [automation, video, ffmpeg, llm, captions, instagram]
 ---
 
@@ -39,10 +39,10 @@ The full scope:
 
 ## Architecture
 
-Each stage produces artifacts the next stage consumes. When something breaks—and it will—you can inspect the output and rerun just that piece.
+Each stage produces artifacts the next stage consumes. When something breaks (and it will), you can inspect the output and rerun just that piece.
 
 ```
-scrape → rewrite → tts+captions → render → publish
+scrape -> rewrite -> tts+captions -> render -> publish
 ```
 
 Why this matters: scraping hits rate limits. Rewriting produces garbage. TTS chokes on edge cases. FFmpeg will ruin your day over a missing codec.
