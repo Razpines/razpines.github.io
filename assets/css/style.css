@@ -77,7 +77,8 @@ pre {
 
 .demo-video {
   width: 100%;
-  max-width: 420px;
+  max-width: 360px;
+  max-height: min(70vh, 520px);
   height: auto;
   display: block;
   margin: 14px auto;
