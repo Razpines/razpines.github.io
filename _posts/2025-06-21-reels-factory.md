@@ -14,6 +14,16 @@ This is about building a pipeline that eats Reddit posts and spits out ready-to-
 
 ---
 
+## Example output
+
+<video class="demo-video" controls muted playsinline preload="metadata">
+  <source src="{{ '/assets/media/reels-factory/example.mp4' | relative_url }}" type="video/mp4" />
+  Your browser doesn't support embedded videos. You can
+  <a href="{{ '/assets/media/reels-factory/example.mp4' | relative_url }}">download the example video</a>.
+</video>
+
+---
+
 ## The goal
 
 I didn't want to generate one cool video. I wanted a factory:

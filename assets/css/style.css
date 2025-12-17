@@ -75,6 +75,17 @@ pre {
   border-radius: 12px;
 }
 
+.demo-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 14px 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #000;
+  box-shadow: var(--shadow);
+}
+
 .container {
   max-width: var(--max);
   margin: 0 auto;
