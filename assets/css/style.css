@@ -1,0 +1,264 @@
+:root {
+  --bg: #0b0f19;
+  --panel: #0f1629;
+  --text: #e7eaf1;
+  --muted: #a9b1c3;
+  --border: rgba(255, 255, 255, 0.12);
+  --accent: #8ab4ff;
+  --accent-2: #a8ffdc;
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  --radius: 14px;
+  --max: 980px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  background: radial-gradient(
+      1200px 800px at 20% -10%,
+      rgba(138, 180, 255, 0.25),
+      transparent 55%
+    ),
+    radial-gradient(
+      900px 700px at 100% 0%,
+      rgba(168, 255, 220, 0.18),
+      transparent 50%
+    ),
+    var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+code,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+pre {
+  padding: 14px;
+  overflow: auto;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+}
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 22px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+}
+.skip-link:focus {
+  left: 10px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--border);
+  background: rgba(11, 15, 25, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  font-weight: 650;
+  letter-spacing: 0.2px;
+  color: var(--text);
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.nav a {
+  color: var(--muted);
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+.nav a:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+  text-decoration: none;
+}
+
+.hero {
+  margin-top: 14px;
+  border: 1px solid var(--border);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.02)
+  );
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+
+.hero h1 {
+  margin: 0 0 6px 0;
+  font-size: clamp(30px, 5vw, 46px);
+  letter-spacing: -0.5px;
+}
+
+.hero p {
+  margin: 10px 0;
+  color: var(--muted);
+  max-width: 70ch;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  text-decoration: none;
+}
+.button:hover {
+  text-decoration: none;
+  border-color: rgba(138, 180, 255, 0.4);
+  background: rgba(138, 180, 255, 0.12);
+}
+.button.primary {
+  border-color: rgba(168, 255, 220, 0.35);
+  background: rgba(168, 255, 220, 0.12);
+}
+.button.primary:hover {
+  border-color: rgba(168, 255, 220, 0.55);
+}
+
+.grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+}
+
+.card {
+  grid-column: span 12;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+
+@media (min-width: 860px) {
+  .card.half {
+    grid-column: span 6;
+  }
+}
+
+.card h2,
+.card h3 {
+  margin: 0 0 8px 0;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.list {
+  margin: 10px 0 0 0;
+  padding-left: 18px;
+}
+.list li {
+  margin: 6px 0;
+}
+
+.post-title {
+  margin: 0 0 6px 0;
+}
+
+.post-meta {
+  margin: 0 0 10px 0;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.post-desc {
+  margin: 0 0 14px 0;
+  color: var(--muted);
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.site-footer {
+  margin-top: 26px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: inline-flex;
+  gap: 12px;
+}
+.footer-links a {
+  color: var(--muted);
+}
+.footer-links a:hover {
+  color: var(--text);
+  text-decoration: none;
+}

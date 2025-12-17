@@ -1,0 +1,18 @@
+- name: Reels Factory
+  status: Shipped
+  description: End-to-end pipeline that turns Reddit stories into ready-to-post vertical videos (rewrite → TTS → timed captions → render → optional publish).
+  repo: https://github.com/Razpines/reels_factory
+  highlights:
+    - Modular stages with reruns via cached artifacts
+    - Word-level captions and mobile readability tweaks
+    - FFmpeg-based 9:16 rendering pipeline
+    - Optional Instagram Graph API publishing
+
+- name: Your Next Project
+  status: In progress
+  description: Add more entries in `_data/projects.yml` to populate the Projects page.
+  repo: https://github.com/Razpines
+  highlights:
+    - What it does
+    - Why it’s interesting
+    - Stack / constraints / results

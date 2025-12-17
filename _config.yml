@@ -1,0 +1,14 @@
+title: Razpines
+description: Portfolio, CV, projects, and notes.
+github_username: Razpines
+url: ""
+baseurl: ""
+
+markdown: kramdown
+permalink: /blog/:title/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
