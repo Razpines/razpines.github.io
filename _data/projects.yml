@@ -9,7 +9,7 @@
     - FFmpeg-based 9:16 rendering pipeline
     - Optional Instagram Graph API publishing
 
-- name: Paper: Compound matrices and Hausdorff dimension
+- name: "Paper: Compound matrices and Hausdorff dimension"
   status: Publication
   description: A paper on generalizing multiplicative/additive compounds and contraction theory to the Hausdorff dimension.
   url: https://arxiv.org/abs/2012.13441
