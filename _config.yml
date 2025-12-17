@@ -1,11 +1,16 @@
-title: Razpines
-description: Portfolio, CV, projects, and notes.
+title: Raz Pines
+description: Portfolio, projects, and notes.
 github_username: Razpines
+linkedin_url: https://www.linkedin.com/in/razpines
+email: razpines@gmail.com
 url: ""
 baseurl: ""
 
 markdown: kramdown
 permalink: /blog/:title/
+
+exclude:
+  - cv.md
 
 defaults:
   - scope:

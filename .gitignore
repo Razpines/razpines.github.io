@@ -1,0 +1,8 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/
+
+# Local-only reference CV (do not publish)
+cv.md

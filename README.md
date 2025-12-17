@@ -1,6 +1,6 @@
 # razpines.github.io
 
-Portfolio/CV + projects + blog, published with GitHub Pages.
+Portfolio + projects + blog, published with GitHub Pages.
 
 ## Publish
 

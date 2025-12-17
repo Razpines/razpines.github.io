@@ -23,8 +23,9 @@
           <a href="{{ '/about/' | relative_url }}">About</a>
           <a href="{{ '/projects/' | relative_url }}">Projects</a>
           <a href="{{ '/blog/' | relative_url }}">Blog</a>
-          <a href="{{ '/cv/' | relative_url }}">CV</a>
           <a href="{{ '/contact/' | relative_url }}">Contact</a>
+          {% if site.linkedin_url %}<a href="{{ site.linkedin_url }}">LinkedIn</a>{% endif %}
+          {% if site.email %}<a href="mailto:{{ site.email }}">Email</a>{% endif %}
         </nav>
       </div>
     </header>
@@ -38,7 +39,8 @@
         <span>© {{ site.time | date: '%Y' }} {{ site.title }}</span>
         <span class="footer-links">
           <a href="https://github.com/{{ site.github_username | default: 'Razpines' }}">GitHub</a>
-          <a href="{{ '/contact/' | relative_url }}">Email</a>
+          {% if site.linkedin_url %}<a href="{{ site.linkedin_url }}">LinkedIn</a>{% endif %}
+          {% if site.email %}<a href="mailto:{{ site.email }}">Email</a>{% endif %}
         </span>
       </div>
     </footer>

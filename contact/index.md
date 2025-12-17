@@ -5,5 +5,6 @@ permalink: /contact/
 
 Best way to reach me:
 
-- GitHub: https://github.com/Razpines
-- Email: (add your email here)
+- LinkedIn: {{ site.linkedin_url }}
+- Email: [{{ site.email }}](mailto:{{ site.email }})
+- GitHub: https://github.com/{{ site.github_username }}
