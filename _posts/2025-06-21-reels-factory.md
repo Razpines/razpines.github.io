@@ -14,7 +14,7 @@ This post is a technical write-up of a small factory I built: a pipeline that st
 
 ## Example output
 
-<video class="demo-video" controls muted playsinline preload="metadata">
+<video class="demo-video" controls playsinline preload="metadata">
   <source src="{{ '/assets/media/reels-factory/example.mp4' | relative_url }}" type="video/mp4" />
   Your browser doesn't support embedded videos. You can
   <a href="{{ '/assets/media/reels-factory/example.mp4' | relative_url }}">download the example video</a>.
