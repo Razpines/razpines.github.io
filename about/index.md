@@ -18,4 +18,4 @@ Background:
 - Python/C++ plus modern ML tooling (PyTorch, LightGBM, Spark/AWS)
 - MSc in Electrical Engineering and an MBA
 
-For the most up-to-date experience and roles, see my LinkedIn: {{ site.linkedin_url }}.
+For the most up-to-date experience and roles, see my **[LinkedIn]({{ site.linkedin_url }})**.
